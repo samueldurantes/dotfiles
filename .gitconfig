@@ -1,5 +1,6 @@
 [user]
 	name = Samuel Durante
 	email = hyossha@gmail.com
+	signinkey = 0A460EFF6A794882
 [init]
 	defaultBranch = master
