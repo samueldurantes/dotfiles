@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "terminal.integrated.fontFamily": "Consolas",
+  "terminal.integrated.fontSize": 16,
+  
+  "workbench.colorTheme": "Eva Dark",
+  "workbench.iconTheme": "material-icon-theme",
+}
