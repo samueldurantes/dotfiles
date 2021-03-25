@@ -1,0 +1,28 @@
+general {
+        colors = true
+        interval = 5
+}
+
+order += "cpu_temperature 0"
+order += "ethernet _first_"
+order += "memory"
+order += "tztime local"
+
+cpu_temperature 0 {
+        format = "Coff Core: %degrees °C"
+}
+
+ethernet _first_ {
+        format_up = "E: (%speed)"
+        format_down = "E: down"
+}
+
+memory {
+        format = "Memory used: %used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
