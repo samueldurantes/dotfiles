@@ -1,6 +1,6 @@
 xterm*faceName: xft: Ubuntu Mono
-xterm*faceSize: 14
+xterm*faceSize: 17
 xterm*saveLines: 2000
 xterm*foreground: white
 xterm*background: black
-xterm*cursorColor: rgb:80/00/00
+xterm*cursorColor: gray
