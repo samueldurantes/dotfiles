@@ -23,7 +23,7 @@ def get_uptime():
     return uptime_seconds
 
 def write_uptime_file():
-    threading.Timer(1, bruh).start()
+    threading.Timer(1, write_uptime_file).start()
     with open("/tmp/uptime", "w") as f:
         f.write(format_uptime(get_uptime()))
         f.close()
