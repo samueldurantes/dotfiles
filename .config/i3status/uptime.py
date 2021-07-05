@@ -19,13 +19,13 @@ def format_uptime(ms):
 def get_uptime():
     with open("/proc/uptime", "r") as f:
         uptime_seconds = float(f.readline().split()[0])
-        
+
     return uptime_seconds
 
 def write_uptime_file():
     threading.Timer(1, bruh).start()
-    f = open("/tmp/uptime", "w")
-    f.write(format_uptime(get_uptime()))
-    f.close()
+    with open("/tmp/uptime", "w") as f:
+        f.write(format_uptime(get_uptime()))
+        f.close()
 
 write_uptime_file()
