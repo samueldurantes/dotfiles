@@ -4,3 +4,4 @@ xterm*saveLines: 2000
 xterm*foreground: white
 xterm*background: black
 xterm*cursorColor: gray
+xterm*selectToClipboard: true
