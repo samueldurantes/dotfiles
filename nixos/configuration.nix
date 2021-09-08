@@ -7,7 +7,6 @@
       ./programs/nvim.nix
     ];
 
-  # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/sda";
@@ -68,10 +67,10 @@
   users.users.samuel = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-	  packages = with pkgs; [
-	    discord
-	  ];
+    extraGroups = ["wheel"];
+    packages = with pkgs; [
+      discord
+    ];
   };
 
   environment.systemPackages = with pkgs; [
