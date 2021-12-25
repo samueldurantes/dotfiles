@@ -6,6 +6,7 @@ import Data.Monoid
 import System.Exit
 import Graphics.X11.ExtraTypes.XF86
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.EwmhDesktops
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
@@ -52,7 +53,7 @@ myLayout = tiled ||| Mirror tiled ||| Full
     ratio = 1/2
     delta = 3/100
 
-myEventHook = mempty
+myEventHook = fullscreenEventHook
 myLogHook = return ()
 myStartupHook = return ()
 
