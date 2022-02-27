@@ -4,14 +4,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim'
-Plug 'morhetz/gruvbox'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme codedark
 set background=dark
 
-set hidden
-set number
+syntax on
 set tabstop=2
 set shiftwidth=2
-syntax on
+set expandtab
+set ai
+set number
+set hlsearch
+set ruler
