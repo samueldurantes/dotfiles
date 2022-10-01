@@ -3,4 +3,14 @@
 	email = samueldurante.h@gmail.com
 	signinkey = 0A460EFF6A794882
 [init]
-	defaultBranch = master
+	defaultBranch = main
+[alias]
+  poma = pull origin main
+  co = checkout
+  lg = log --all --graph --decorate --oneline --abbrev-commit
+  cm = commit
+  ac = !git add -A && git commit
+  st = status
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
