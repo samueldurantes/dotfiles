@@ -1,11 +1,11 @@
 [user]
-  name = Samuel Durante
-  email = samueldurante.h@gmail.com
-  signinkey = 0A460EFF6A794882
+	name = Samuel Durante
+	email = samueldurante.h@gmail.com
+	signinkey = 0A460EFF6A794882
 [init]
-  defaultBranch = main
+	defaultBranch = main
 [alias]
-  coma = checkout main
+	coma = checkout main
   cob = checkout -b
   poma = pull origin main
   pu = push origin HEAD
@@ -16,6 +16,6 @@
   ac = !git add -A && git commit
   st = status
   tags = tag -l
-  bd = branch -D
+	bd = branch -D
   branches = branch -a
   remotes = remote -v
