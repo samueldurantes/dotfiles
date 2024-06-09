@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./git.nix
+    ./zsh.nix
+  ];
+
   home.stateVersion = "23.11";
  
   home.packages = with pkgs; [
@@ -9,12 +14,4 @@
     coreutils
     jq
   ];
- 
-  programs.zsh = {
-    enable = true;
- 
-    shellAliases = {
-      ls = "ls --color";
-    };
-  };
 }

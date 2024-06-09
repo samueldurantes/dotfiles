@@ -10,7 +10,7 @@
   };
 
   outputs = { self, nixpkgs, nix-darwin, home-manager, ... }: let
-    system = "aarch64-darwin";  # Use "x86_64-darwin" para Intel Macs
+    system = "aarch64-darwin";
     pkgs = import nixpkgs {
       inherit system;
       config = { allowUnfree = true; };
