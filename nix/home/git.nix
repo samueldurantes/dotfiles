@@ -14,7 +14,7 @@
     difftastic.enable = true;
 
     aliases = {
-      l = "log --oneline";
+      l = "log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset%C(yellow)%d%Creset'";
       coma = "checkout main";
       cob = "checkout -b";
       poma = "pull origin main";
