@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./git.nix
-    ./zsh.nix
+    ./common/git.nix
+    ./common/zsh.nix
   ];
 
   home.stateVersion = "23.11";

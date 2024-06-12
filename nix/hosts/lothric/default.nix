@@ -17,6 +17,7 @@
     enable = true;
     casks = [
       "discord"
+      "chromium"
     ];
   };
 }
