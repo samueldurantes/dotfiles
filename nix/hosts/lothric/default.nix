@@ -17,7 +17,8 @@
     enable = true;
     casks = [
       "discord"
-      "chromium"
+      "google-chrome"
+      "visual-studio-code"
     ];
   };
 }
