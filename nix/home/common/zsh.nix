@@ -54,6 +54,8 @@ _:
       alias gfap="git fetch --all --prune"
       alias gall="git coma && git poma && gbd && gfap"
 
+      alias nd="nix develop --command \"$SHELL\""
+
       export ELASTIC_APM_ACTIVE=false
       export TZ=utc
 
