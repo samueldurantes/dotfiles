@@ -24,7 +24,7 @@
         specialArgs = { inherit pkgs; };
 
         modules = [
-          ./nix/hosts/lothric/default.nix
+          ./nix/hosts/lothric/configuration.nix
           home-manager.darwinModules.home-manager
           {
             nixpkgs.config = { allowUnfree = true; };
