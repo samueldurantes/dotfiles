@@ -19,6 +19,7 @@
       "discord"
       "google-chrome"
       "visual-studio-code"
+      "iterm2"
     ];
   };
 }
