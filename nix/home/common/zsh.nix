@@ -53,6 +53,7 @@ _:
       alias gbd="git branch | grep -v "main" | xargs git branch -D"
       alias gfap="git fetch --all --prune"
       alias gall="git coma && git poma && gbd && gfap"
+      alias ghm="gh pr merge -sd --admin"
 
       alias nd="nix develop --command \"$SHELL\""
 
