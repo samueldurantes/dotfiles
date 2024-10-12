@@ -78,6 +78,18 @@ _:
       # pnpm end
 
      . "$HOME/.cargo/env" 
+
+     export PATH="$HOME/.rbenv/bin:$PATH"
+     eval "$(rbenv init -)"
+     
+     # The next line updates PATH for the Google Cloud SDK.
+     if [ -f '/Users/samuel/.config/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/samuel/.config/google-cloud-sdk/path.zsh.inc'; fi
+     
+     # The next line enables shell command completion for gcloud.
+     if [ -f '/Users/samuel/.config/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/samuel/.config/google-cloud-sdk/completion.zsh.inc'; fi
+
+     export BUN_INSTALL="$HOME/.bun" 
+     export PATH="$BUN_INSTALL/bin:$PATH"
     '';
   };
 }
